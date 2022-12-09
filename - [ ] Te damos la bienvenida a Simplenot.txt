@@ -1,0 +1,107 @@
+Te damos la bienvenida a Noteando
+
+Noteando  es una forma fácil de tomar notas, crear listas de tareas, capturar ideas y mucho más. Abre la aplicación, escribe algunas líneas y listo. 
+Noteando se sincronizará gratuitamente con tus dispositivos, tus notas estarán contigo en todo momento.
+
+
+Notas ancladas
+
+¿Tienes un par de notas importantes que consultas constantemente? 
+Colócalas en la parte superior de tu lista para tenerlas siempre a mano.
+
+Etiquetas
+
+Organiza tus notas con etiquetas. Funcionan de forma parecida a las carpetas, con la diferencia que puedes tener tantas etiquetas como quieras por nota.
+
+
+Sincronización
+
+No hay botón de guardar, ya que todos tus cambios se sincronizan automáticamente y puedes acceder a tus notas desde cualquier plataforma. Obtén más información sobre la sincronización en https://simplenote.com/help/#syncing.
+
+Búsqueda
+
+Encuentra rápidamente las notas mediante la búsqueda. Para buscar por etiquetas, escribe “tag:” en la barra de búsqueda, seguido del nombre de la etiqueta.
+
+Publicación
+
+Publicar notas es una forma de compartir notas en la web para que otros las lean. Puede usar el nuevo panel de información para publicar una nota en la web. Simplemente toque el  ícono del panel Información  cuando vea una nota, luego toque Publicar. En cuestión de segundos podrá compartir un enlace para correr la voz. Para publicar una nota usando la aplicación web, haga clic en el ícono de puntos suspensivos y luego haga clic en Publicar.
+
+¿Cuál es la longitud máxima de una nota?
+Puede crear notas muy largas si es absolutamente necesario, pero no recomendamos hacer notas de más de varios miles de palabras. Las notas grandes pueden tardar mucho tiempo en procesarse tanto en la aplicación web como en su dispositivo.
+
+Puede dividir notas largas en varias notas y vincularlas mediante vínculos internos .
+
+¿Cuántas notas puedo hacer?
+Actualmente no imponemos ninguna restricción en la cantidad de notas que puede hacer, siempre que no esté abusando del sistema.
+
+Tienes mi dirección de correo electrónico...
+Respetamos la privacidad de nuestros usuarios y nunca daremos direcciones de correo electrónico a terceros.
+
+¿Cuánto cuesta Simplenote?
+Simplenote es un servicio gratuito proporcionado por sus amigos en  Automattic .
+
+
+Cuenta
+Olvidé mi contraseña. ¿Qué debo hacer?
+Para restablecer su contraseña, visite  app.simplenote.com/forgot . Ingrese su dirección de correo electrónico allí y se le enviará un enlace de restablecimiento de contraseña.
+
+¿Puedo cerrar mi cuenta?
+Sí, esto solo se puede hacer a través de la aplicación web Simplenote:
+
+Inicie sesión en la  aplicación web  y vaya a la configuración de su cuenta. Allí encontrará una opción para eliminar su cuenta de Simplenote.
+
+Tenga en cuenta que todas sus notas se eliminarán de forma permanente y los detalles de su cuenta (como su dirección de correo electrónico) se eliminarán. Si desea conservar una copia de sus notas, le recomendamos que  las exporte  antes de cerrar su cuenta.
+
+¿Cómo cambio la dirección de correo electrónico que utilizo para iniciar sesión?
+Puede cambiar su dirección de correo electrónico visitando la página Configuración en la  aplicación web . En la parte superior, verá su dirección junto con un enlace de "cambio". Haga clic en ese enlace y podrá ingresar su nueva dirección. Se enviará un correo electrónico de confirmación a su dirección anterior.
+
+
+We are passionate about making the web a better place.
+
+© Automattic Inc., purveyors of fine blogging and site-building services since 2005. Thank you for your time.
+
+© Automattic Inc., proveedores de excelentes servicios de blogs y creación de sitios desde 2005. Gracias por su tiempo.
+Nos apasiona hacer de la web un lugar mejor.
+
+
+
+
+
+
+Nuestro boletín quincenal lleno de inspiración, podcasts, tendencias y noticias.
+¿Quieres descubrir la historia detrás de nuestra nueva identidad? https://www.make.com/en/integromat-evolves-to-make Make formely integromat
+Al enviar este formulario, confirma que acepta el almacenamiento y procesamiento de sus datos personales como se describe en nuestro Aviso de privacidad 
+
+
+
+
+Ingeniería de la Felicidad (Experiencia del Cliente y Soporte Técnico)
+Nuestro objetivo en Automattic es democratizar la publicación y el comercio electrónico. Hacemos esto escuchando las necesidades de nuestros clientes y guiándolos para que aprovechen al máximo los productos que ofrecemos. Otra parte clave de esta misión es proporcionar plataformas de publicación seguras y confiables para nuestras comunidades apasionadas y comprometidas. Construimos relaciones basadas en la confianza, lo que resulta en clientes y colegas felices, apasionados y leales. Debe estar preparado para cualquier soporte técnico, éxito del cliente o talento de confianza y seguridad abierto a nuevas oportunidades
+
+
+Comercialización
+Nuestros equipos de marketing generan demanda de nuestros productos y marcas en Automattic . Para cualquier talento de marketing abierto a nuevas oportunidades, consulte el siguiente formulario y registre su interés. 
+
+Operaciones Comerciales 
+Business Operations (o Biz Ops) es responsable de impulsar el motor operativo de Automattic. Somos la columna vertebral de la empresa, asegurándonos de que nuestro día a día transcurra sin problemas. 
+
+
+Ventas y Desarrollo de Negocios | Formulario de interés
+en Automattic: presentaciones de interés general
+Remoto
+La gente de Ventas y Desarrollo Comercial es responsable de impulsar el crecimiento y la generación de ingresos de nuestros productos y marcas en Automattic . Para cualquier talento de ventas y desarrollo comercial abierto a nuevas oportunidades, consulte el siguiente formulario y registre su interés. 
+
+
+Operaciones Comerciales | Formulario de interés
+en Automattic: presentaciones de interés general
+Remoto
+Business Operations (o Biz Ops) es responsable de impulsar el motor operativo de Automattic. Somos la columna vertebral de la empresa, asegurándonos de que nuestro día a día transcurra sin problemas. 
+
+https://simperium.com/
+Simperium es un servicio de sincronización de datos multiplataforma. Funciona para almacenar y sincronizar notas en múltiples plataformas de aplicaciones. Las bibliotecas de Simperium manejan todas las redes para que los desarrolladores puedan concentrarse en crear una excelente experiencia de usuario
+
+Simperium mueve datos de manera instantánea y automática, donde sea que se necesite. Puede usarlo en sus aplicaciones móviles, web y de escritorio, así como en sus servicios de back-end.
+
+Simperium para JavaScript: Simperium.js incluye código de google-diff-match-patch para fusionar texto y usa SockJS para mantener una conexión persistente con nuestros servidores.
+
+Para iniciar Simperium, debe proporcionar una identificación de aplicación y un token de acceso. https://simperium.com/docs/js/
