@@ -1,0 +1,21 @@
+- var c = [
+- 	'#fe0, #e43', '#5be, #728', 
+- 	'#bd3, #3ae', '#e72, #e39'
+- ];
+- var n = c.length;
+- var f = .4;
+- var dc = 16, g = .125*f*dc;
+
+style :root { --nc: #{n}; --d: #{dc}rem; --g: #{g}rem; --f: #{f} }
+	- for(var i = 1; i < n; i++) {
+		| @media (max-width: #{(n - i + 1)*dc + (n - i + 2)*g}em) {
+		| 	:root {
+		| 		--nc: #{n - i};
+		- if(i === n - 1) {
+		| 		font-size: 5vw
+		- }
+		| 	}
+		| }
+	- }
+- for(var i = 0; i < n; i++)
+	.item(style=`--sl: ${c[i]}`) round & round
