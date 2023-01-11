@@ -1,0 +1,30 @@
+.txt_1, .txt_2, #ad_cta, #logo {
+  opacity: 0;
+}
+
+.txt {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.txt_b {
+  font-weight: 500;
+}
+
+.txt_3 {
+  opacity: 1;
+  font-size: 20px;
+}
+
+svg {
+  background: #fff;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+body {
+  background: #eff;
+  background: linear-gradient(to left, #eee, #ddefef);     
+}

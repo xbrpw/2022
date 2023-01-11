@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700|Oswald);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+.main-container {
+  width: 70%;
+  height: 100%;
+  background: #0088cc;
+  float: left;
+}
+
+.user-container {
+  width: 30%;
+  height: 100%;
+  background: #1a4d66;
+  color: white;
+  float: right;
+  overflow-y: auto;
+  cursor: default;
+}
+.user-container > i {
+  padding: 0.5em;
+  visibility: hidden;
+}
+
+@media (max-width: 1300px) {
+  .main-container {
+    width: 100%;
+    float: none;
+  }
+
+  .user-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25em;
+    float: none;
+    transition: transform 0.5s;
+    transform: translateX(calc(100% - 2em));
+  }
+  .user-container:hover {
+    transform: translateX(0);
+  }
+  .user-container > i {
+    visibility: visible;
+  }
+}
+.users {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 3;
+}
+.users li {
+  padding: 0 3em;
+}
+.users li:nth-child(odd) {
+  background: #1f5c7a;
+}
+.users li.is-current-user {
+  color: #66ccff;
+}
+.users li.is-active .users__user--status i {
+  color: #7eeb47;
+}
+.users li.is-idle .users__user--status i {
+  color: #ebcf47;
+}
+.users li.is-offline .users__user--status i {
+  color: #eb4747;
+}
+.users li.is-offline .users__user--name {
+  opacity: 0.5;
+}
+.users li.is-offline .users__user--interactions i.fa-comment {
+  opacity: 0.2;
+  cursor: default;
+}
+.users li.is-offline .users__user--interactions i.fa-comment:hover:after {
+  display: none;
+}
+
+.users__user--status {
+  padding-right: 1em;
+  font-size: 0.7em;
+  line-height: 4.3;
+  float: left;
+}
+
+.users__user--name {
+  float: left;
+}
+
+.users__user--interactions {
+  float: right;
+}
+.users__user--interactions i {
+  position: relative;
+  margin-left: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+li.is-current-user .users__user--interactions {
+  visibility: hidden;
+}
+
+i.fa-envelope:hover:after, i.fa-comment:hover:after {
+  content: "Send Email";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  background: white;
+  font-size: 0.7em;
+  font-family: "Lato";
+  font-weight: 700;
+  text-transform: lowercase;
+  white-space: nowrap;
+  color: #004466;
+  z-index: 100;
+  transform: translateY(-50%);
+}
+
+i.fa-comment:hover:after {
+  content: "Private Message";
+}
+
+i.disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+i.disabled:hover:after {
+  display: none;
+}
+
+/** PAGE STYLES **/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+  line-height: 1.5;
+  font-weight: 300;
+  overflow-x: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 0.75em 0 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 4em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  margin: 0 0 0.5em;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #33bbff;
+}
+.user-container h3 {
+  padding: 1em 2em 0;
+}
+
+.cf:before, .users li:before,
+.cf:after,
+.users li:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after, .users li:after {
+  clear: both;
+}
+
+.cf, .users li {
+  *zoom: 1;
+}
