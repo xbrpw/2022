@@ -1,13 +1,202 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lorem Ipsum</title>
+  <style>
+    /*
+    =============== 
+    Fonts
+    ===============
+    */
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-  <!-- styles -->
-  <link rel="stylesheet" href="styles.css" />
+    /*
+    =============== 
+    Variables
+    ===============
+    */
+
+    :root {
+      --ff-primary: "Roboto", sans-serif;
+      --ff-secondary: "Open Sans", sans-serif;
+      --transition: all 0.3s linear;
+      --spacing: 0.25rem;
+      --radius: 0.5rem;
+      --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      --max-width: 1170px;
+      --fixed-width: 620px;
+    }
+    /*
+    =============== 
+    Global Styles
+    ===============
+    */
+
+    *,
+    ::after,
+    ::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: var(--ff-secondary);
+      background-color: #323232;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='92' viewBox='0 0 112 92'%3E%3Cg fill='%23000000' fill-opacity='0.06'%3E%3Cpath fill-rule='evenodd' d='M72 10H40L16 20H0v8h16l24-14h32l24 14h16v-8H96L72 10zm0-8H40L16 4H0v8h16l24-6h32l24 6h16V4H96L72 2zm0 84H40l-24-6H0v8h16l24 2h32l24-2h16v-8H96l-24 6zm0-8H40L16 64H0v8h16l24 10h32l24-10h16v-8H96L72 78zm0-12H40L16 56H0v4h16l24 14h32l24-14h16v-4H96L72 66zm0-16H40l-24-2H0v4h16l24 6h32l24-6h16v-4H96l-24 2zm0-16H40l-24 6H0v4h16l24-2h32l24 2h16v-4H96l-24-6zm0-16H40L16 32H0v4h16l24-10h32l24 10h16v-4H96L72 18z'/%3E%3C/g%3E%3C/svg%3E");
+      color: #FF6F59;
+      line-height: 1.5;
+      font-size: 0.875rem;
+    }
+    ul {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    img:not(.logo) {
+      width: 100%;
+    }
+    img {
+      display: block;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      letter-spacing: var(--spacing);
+      text-transform: capitalize;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+      font-family: var(--ff-primary);
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+      color: #FF6F59;
+    }
+    h4 {
+      font-size: 0.875rem;
+    }
+    p {
+      margin-bottom: 1.25rem;
+      color: #EFF9F0;
+    }
+    @media screen and (min-width: 800px) {
+      h1 {
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-size: 1.75rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      body {
+        font-size: 1rem;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        line-height: 1;
+      }
+    }
+    /*  global classes */
+
+    .btn {
+      text-transform: uppercase;
+      background: #FF6F59;
+      color: #191919;
+      padding: 0.375rem 0.75rem;
+      letter-spacing: 1px;
+      display: inline-block;
+      transition: var(--transition);
+      font-size: 0.875rem;
+      border: 2px solid var(--clr-primary-5);
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--radius);
+    }
+    .btn:hover {
+      color: #EFF9F0;
+      background: #191919;
+      border-color: #EFF9F0;
+    }
+    /* section */
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-center {
+      width: 90vw;
+      margin: 0 auto;
+      max-width: 40rem;
+      margin-top: 5rem;
+      text-align: center;
+      color: #FF6F59;
+    }
+    @media screen and (min-width: 992px) {
+      .section-center {
+        width: 95vw;
+      }
+    }
+    main {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    /*
+    =============== 
+    Lorem Ipsum
+    ===============
+    */
+    h3 {
+      text-transform: uppercase;
+      color: #FF6F59;
+    }
+    .lorem-form {
+      text-transform: capitalize;
+      letter-spacing: var(--spacing);
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FF6F59;
+    }
+    label {
+      font-size: 1.25rem;
+      color: #FF6F59;
+    }
+    input {
+      padding: 0.25rem 0.5rem;
+
+      width: 4rem;
+      border-radius: var(--radius);
+      border: none;
+      margin: 0 0.5rem;
+      font-size: 1.25rem;
+    }
+    button {
+      background: var(--clr-primary-10);
+    }
+    .result {
+      margin-bottom: 2rem;
+    }    
+  </style>
 </head>
 <body>
 <section class="section-center">
@@ -18,9 +207,46 @@
     <button type="submit" class="btn">generate</button>
   </form>
   <article class="lorem-text"></article>
+  
 </section>
 
-<!-- javascript -->
-<script src="app.js"></script>
+<script>
+  const text = [
+      `&#60;p&#62;Jelly sweet roll jelly beans biscuit pie macaroon chocolate donut. Carrot cake caramels pie sweet apple pie tiramisu carrot cake. Marzipan marshmallow croissant tootsie roll lollipop. Cupcake lemon drops bear claw gummies. Jelly bear claw gummi bears lollipop cotton candy gummi bears chocolate bar cake cookie. Cupcake muffin danish muffin cookie gummies. Jelly beans tiramisu pudding. Toffee soufflé chocolate cake pastry brownie. Oat cake halvah sweet roll cotton candy croissant lollipop. Macaroon tiramisu chocolate bar candy candy carrot cake jelly sweet. Gummies croissant macaroon dessert. Chocolate cake dragée pie.&#60;/p&#62;`,
+      `&#60;p&#62;Next level tbh everyday carry, blog copper mug forage kitsch roof party pickled hammock kale chips tofu. Etsy shoreditch 8-bit microdosing, XOXO viral butcher banh mi humblebrag listicle woke bicycle rights brunch before they sold out ramps. Twee shabby chic taiyaki flannel, enamel pin venmo vape four loko. Hexagon kale chips typewriter kitsch 8-bit organic plaid small batch keffiyeh ethical banh mi narwhal echo park cronut.&#60;/p&#62;`,
+      `&#60;p&#62;Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.&#60;/p&#62;`,
+      `&#60;p&#62;Cat gets stuck in tree firefighters try to get cat down firefighters get stuck in tree cat eats firefighters' slippers kitty power ignore the squirrels, you'll never catch them anyway for what a cat-ass-trophy! or purr as loud as possible, be the most annoying cat that you can, and, knock everything off the table. Pretend you want to go out but then don't bite off human's toes, yet disappear for four days and return home with an expensive injury; bite the vet so catch eat throw up catch eat throw up bad birds.&#60;/p&#62; `,
+      `&#60;p&#62;This opera's as lousy as it is brilliant! Your lyrics lack subtlety. You can't just have your characters announce how they feel. That makes me feel angry! Anyhoo, your net-suits will allow you to experience Fry's worm infested bowels as if you were actually wriggling through them.I just told you! You've killed me! Fry! Quit doing the right thing, you jerk! Michelle, I don't regret this, but I both rue and lament it. Morbo can't understand his teleprompter because he forgot how you say that letter that's shaped like a man wearing a hat.&#60;/p&#62;`,
+      `&#60;p&#62;Airedale hard cheese mozzarella. Pecorino melted cheese port-salut emmental babybel cheese and wine melted cheese manchego. Everyone loves blue castello everyone loves fromage cheese slices airedale cheddar cream cheese. Bavarian bergkase who moved my cheese halloumi port-salut gouda jarlsberg ricotta rubber cheese. Stinking bishop smelly cheese brie.&#60;/p&#62;`,
+      `&#60;p&#62;Salvia glossier subway tile, leggings mustache YOLO semiotics chia. Pitchfork tbh af blog church-key meggings vaporware PBR&B master cleanse post-ironic man bun pabst mustache letterpress synth. Snackwave raw denim godard, 3 wolf moon shaman offal kitsch unicorn live-edge selvage schlitz fashion axe vaporware drinking vinegar prism. Shabby chic tacos artisan, chambray chicharrones cardigan leggings typewriter af pop-up williamsburg meditation PBR&B viral. You probably haven't heard of them DIY jean shorts subway tile fashion axe bushwick kitsch tumeric cloud bread vaporware freegan franzen pork belly chicharrones banh mi.&#60;/p&#62;`,
+      `&#60;p&#62;Man braid celiac synth freegan readymade, pitchfork fam salvia waistcoat lomo bitters gentrify four loko. Pitchfork semiotics post-ironic vegan. Tofu meditation microdosing hashtag semiotics venmo. Flexitarian vape tilde taiyaki. Prism poutine farm-to-table, messenger bag vegan taxidermy tattooed sartorial squid jean shorts fixie selvage trust fund vape.&#60;/p&#62;`,
+      `&#60;p&#62;Rutters Plate Fleet boom chandler Brethren of the Coast handsomely lookout marooned brigantine knave. Buccaneer gangway jack rum loot spyglass line Jack Tar fore gaff. Gaff topmast scuttle ballast swab draught measured fer yer chains dance the hempen jig Chain Shot yardarm.&#60;/p&#62;`,
+  ];
+
+  const form = document.querySelector(".lorem-form");
+  const amount = document.getElementById("amount");
+  const result = document.querySelector(".lorem-text");
+
+  form.addEventListener("submit", function (e) {
+      // A click on a form submit button – initiates its submission to the server.
+
+      e.preventDefault();
+
+      const value = parseInt(amount.value);
+      const random = Math.floor(Math.random() * text.length);
+
+      if (isNaN(value) || value < 0 || value > 9) {
+          result.innerHTML = `<p class="result">${text[random]}</p>`;
+      } else {
+          let tempText = text.slice(0, value);
+          tempText = tempText
+              .map(function (item) {
+                  return `<p class="result"><p> ${item} </p></p>`;
+              })
+              .join("");
+          result.innerHTML = tempText;
+      }
+  });  
+</script>
 </body>
 </html>
