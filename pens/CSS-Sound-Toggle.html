@@ -1,0 +1,27 @@
+<div class="CSS-Sound-Toggle">
+
+<div class="sound-icon">
+	<div class="sound-icon-speaker">
+		<div class="sound-icon-speaker-box">
+		
+		</div>
+		<div class="sound-icon-speaker-cone">
+		
+		</div>
+		<div class=" silent sound-icon-speaker-cover">
+			<div class="sound-icon-speaker-cover-bar"></div>
+			<div class="sound-icon-speaker-cover-bar"></div>
+		</div>
+	</div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script>
+// Audio control
+$('.sound-icon').on('click', function() {
+	
+	$('.sound-icon-speaker-cover').toggleClass('silent');
+});	
+</script>
+
+</div>
